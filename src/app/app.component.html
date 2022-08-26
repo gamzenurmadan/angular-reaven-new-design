@@ -1,24 +1,69 @@
-<div >
-  <mat-toolbar id="header" class="align-items-center d-flex fixed-top">
-    <div class="container-fluid d-flex align-items-center">
-      <span class="logo me-auto">
-        <a href="index.html">
-          <img src="assets/images/logo.png" alt style="height: 50px" >
-        </a>
-      </span>
+<mat-toolbar id="header" class="d-flex align-items-center fixed-top">
+  <div class="container d-flex align-items-center">
+    <div class="logo me-auto">
+      <a href="index.html">
+        <img src="assets/images/logo.png" alt style="height:50px;" >
+      </a>
     </div>
-  </mat-toolbar>
-</div>
+    <nav id="navbar" class="navbar order-last order-lg-0">
+      <ul>
+        <li>
+          <a class="nav-link" href="index.html">
+            <span>home</span>
+          </a>
+        </li>
+        <li class="dropdown">
+          <a href="index.html">
+            <span>about</span>
+            <i class="bi bi-chevron-down"></i>
+          </a>
+          <ul>
+            <li>
+              <a class="nav-link" href="index.html">
+                <span>about us</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="index.html">
+                <span>team</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="index.html">
+                <span>tech stack</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="index.html">
+                <span>contact</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="nav-link" href="index.html">
+            <span>our services</span>
+          </a>
+        </li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle">
+        ::before
+      </i>
+    </nav>
+
+  </div>
+</mat-toolbar>
+
 
 <article style="margin-top: 70px; margin-bottom: -95px;">
   <div class="container">
     <div fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0px" fxLayoutAlign="center center"> 
 
-      <div fxFlex="50%" fxFlexOrder="2" fxFlexOrder.xs='1' fxFlexAlign="center">
+      <div data-aos="fade-left" fxFlex="50%" fxFlexOrder="2" fxFlexOrder.xs='1' fxFlexAlign="center">
         <img class="img-fluid" src="assets/images/hero-img.png">
       </div>
 
-      <div  style="width: 80%; height: 80%;" fxFlex="50%" fxFlexOrder="1" fxFlexOrder.xs='2' fxFlexAlign="center" >
+      <div data-aos="fade-up" style="width: 80%; height: 80%;" fxFlex="50%" fxFlexOrder="1" fxFlexOrder.xs='2' fxFlexAlign="center" >
         <h1 class="slogan">
           FinTech, BigData, Business Intelligence
         </h1>

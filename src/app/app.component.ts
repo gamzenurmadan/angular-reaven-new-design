@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as AOS from 'aos';
 
 
 @Component({
@@ -8,6 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   title = 'reaven-web';
+
+  ngOnInit(){
+    AOS.init();
+  }
 }
 
 
