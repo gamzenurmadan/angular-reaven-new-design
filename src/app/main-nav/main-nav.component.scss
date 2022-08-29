@@ -1,0 +1,46 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header{
+  height: 72px;
+  z-index: 997;
+  transition: all 0.5s;
+  background: #fff;
+}
+
+.hidden{
+  display:none;
+}
+
+.rightbuttons{
+  margin-left: auto;
+}
+
+.mat-toolbar a{
+  display: inline-block;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  margin: 0 10px;
+  font-family:'Poppins', sans-serif;
+  font-size: 15px;
+  color: #7b909a;
+  white-space: nowrap;
+  transition: 0.3s;
+  text-decoration: none;
+}

@@ -1,8 +1,12 @@
-#header{
-    height: 72px;
-    z-index: 997;
-    transition: all 0.5s;
-    background: #fff;
+
+.navbar{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .slogan {
