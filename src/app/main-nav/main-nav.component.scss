@@ -1,9 +1,11 @@
 .sidenav-container {
   height: 100%;
+  
 }
 
 .sidenav {
   width: 200px;
+  
 
 }
 
@@ -16,6 +18,15 @@
   top: 0;
   z-index: 1;
 }
+
+.mat-icon{
+  font-size: 18px;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  transition: 0.5s;
+}
+
 
 .header{
   height: 72px;
@@ -32,11 +43,18 @@
   margin-left: auto;
 }
 
-.mat-toolbar a{
+.social-links{
+  margin: 0 0 0 30px !important;
+  display: inline-block !important;
+  justify-content: center !important;
+}
+
+.mat-toolbar a, .mat-list-item{
   display: inline-block;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   margin: 0 10px;
+  margin-left: auto;
   font-family:'Poppins', sans-serif;
   font-size: 15px;
   color: #7b909a;
@@ -44,3 +62,15 @@
   transition: 0.3s;
   text-decoration: none;
 }
+
+.hidden-menu-item{
+  font-family:'Poppins', sans-serif;
+  font-size: 15px;
+  color: #7b909a;
+}
+
+.mat-toolbar a:hover, .mat-list-item:hover, .hidden-menu-item:hover{
+  color: #009cea;
+}
+
+
