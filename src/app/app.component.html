@@ -1,26 +1,28 @@
 <app-main-nav>
-  <article style="margin-top: 70px; margin-bottom: -95px;">
-    <div class="container">
-      <div fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0px" fxLayoutAlign="center center"> 
+  <div class="container">
+    <article style="margin-top: 70px; margin-bottom: -95px;">
+      <mat-grid-list cols="2" rowHeight="2:1">
+        <mat-grid-tile data-aos="fade-up">
+          <span fxLayoutAlign="center center">
+            <h1 class="slogan">
+              FinTech, BigData, Business Intelligence
+            </h1>
+          </span>
+          
+          <span>
+            <p class="text" fxLayoutAlign="center center">
+              Creating cutting-edge software for the delivery and use of financial services,
+              we build up the enterprise's infrastructure for Big Data Management and Business Intelligence.
+              Our software-as-a-services provide companies what is needed for their banking and payment service products.
+            </p>
+          </span>
   
-        <div data-aos="fade-left" fxFlex="50%" fxFlexOrder="2" fxFlexOrder.xs='1' fxFlexAlign="center">
-          <img class="img-fluid" src="assets/images/hero-img.png">
-        </div>
-  
-        <div data-aos="fade-up" style="width: 80%; height: 80%;" fxFlex="50%" fxFlexOrder="1" fxFlexOrder.xs='2' fxFlexAlign="center" >
-          <h1 class="slogan">
-            FinTech, BigData, Business Intelligence
-          </h1>
-    
-          <p class="text">
-            Creating cutting-edge software for the delivery and use of financial services,
-            we build up the enterprise's infrastructure for Big Data Management and Business Intelligence.
-            Our software-as-a-services provide companies what is needed for their banking and payment service products.
-          </p>
-  
-        </div> 
-      </div>
-    </div>
-  </article>
+        </mat-grid-tile>
+        <mat-grid-tile data-aos="fade-left">
+          <img class="tile-image" src="assets/images/hero-img.png" layout-fill>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </article>
+  </div>
 </app-main-nav>
 

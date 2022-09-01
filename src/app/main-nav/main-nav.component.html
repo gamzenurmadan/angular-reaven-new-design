@@ -20,6 +20,7 @@
       <a mat-list-item href="#">contact</a>
     </mat-nav-list>
   </mat-sidenav>
+  
   <mat-sidenav-content>
     <mat-toolbar class="header">
         <span class="logo me-auto">
@@ -31,13 +32,15 @@
           <span [ngClass]="{hidden: (isHandset$ | async) === true}">
             <a href="#">home</a>
             <a mat-list-item href="#"> 
-                <button mat-button [matMenuTriggerFor]="menu" class="hidden-menu-item">about
+                <button mat-button [matMenuTriggerFor]="menu" #menuTrigger="matMenuTrigger" (mouseenter)="menuTrigger.openMenu()" class="hidden-menu-item">about
                   <mat-icon aria-label="expand more" style="vertical-align: center;">expand_more</mat-icon>
                 </button>
-              <mat-menu #menu="matMenu">
-                <button mat-menu-item class="hidden-menu-item">about us</button>
-                <button mat-menu-item class="hidden-menu-item">team</button>
-              </mat-menu>
+              <mat-menu #menu="matMenu" hasbackDrop="false" overlapTrigger="false" hasBackdrop="false">
+                <span (mouseleave)="menuTrigger.closeMenu()">
+                  <button mat-menu-item class="hidden-menu-item">about us</button>
+                  <button mat-menu-item class="hidden-menu-item">team</button>
+                </span>
+               </mat-menu>
             </a>
             <a href="#">our services</a>
             <a href="#">tech stack</a>
