@@ -44,12 +44,18 @@
 }
 
 .social-links{
-  margin: 0 0 0 30px !important;
-  display: inline-block !important;
-  justify-content: center !important;
+  display: inline-block;
+  justify-content: space-between;
+  padding-left: 10px;
+  font-family:'Poppins', sans-serif;
+  font-size: 15px;
+  color: #7b909a;
+  white-space: nowrap;
+  transition: 0.3s;
+  text-decoration: none;
 }
 
-.mat-toolbar a, .mat-list-item{
+.navbar-element, .mat-list-item{
   display: inline-block;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
@@ -62,6 +68,13 @@
   transition: 0.3s;
   text-decoration: none;
 }
+
+.company-logo {
+  display: inline-block;
+  padding: 0 0;
+  white-space: nowrap;
+}
+
 
 .hidden-menu-item{
   font-family:'Poppins', sans-serif;
