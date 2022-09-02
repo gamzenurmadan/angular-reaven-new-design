@@ -1,28 +1,32 @@
 <app-main-nav>
-  <div class="container">
-    <article style="margin-top: 70px; margin-bottom: -95px;">
-      <mat-grid-list cols="2" rowHeight="2:1">
-        <mat-grid-tile data-aos="fade-up">
-          <span fxLayoutAlign="center center">
-            <h1 class="slogan">
-              FinTech, BigData, Business Intelligence
-            </h1>
-          </span>
-          
-          <span>
-            <p class="text" fxLayoutAlign="center center">
-              Creating cutting-edge software for the delivery and use of financial services,
-              we build up the enterprise's infrastructure for Big Data Management and Business Intelligence.
-              Our software-as-a-services provide companies what is needed for their banking and payment service products.
-            </p>
-          </span>
+  <div #introduction class="container">
+    <div class="row">
+      <article data-aos="fade-up" class="col-lg-6 order-lg-1 pt-lg-0 intro-text-block">
+        <h1 class="slogan">
+          FinTech, BigData, Business Intelligence
+        </h1>
   
-        </mat-grid-tile>
-        <mat-grid-tile data-aos="fade-left">
-          <img class="tile-image" src="assets/images/hero-img.png" layout-fill>
-        </mat-grid-tile>
-      </mat-grid-list>
-    </article>
+        <p class="text">
+          Creating cutting-edge software for the delivery and use of financial services,
+          we build up the enterprise's infrastructure for Big Data Management and Business Intelligence.
+          Our software-as-a-services provide companies what is needed for their banking and payment service products.
+        </p>
+      </article>
+
+      <article data-aos="fade-left" class="col-lg-6 order-lg-2 intro-image">
+        <img class="img-fluid" style="vertical-align: center; height: 450px; width: 1000px;" src="assets/images/hero-img.png">
+      </article>
+    </div>
+
+    <div #aboutus>
+      <div class="container">
+        <div class="row">
+          <article data-aos="zoom-in" class="col-lg-6 ">
+            <img class="img-fluid" src="assets/images/logo.png">
+          </article>
+        </div>
+      </div>
+    </div>
   </div>
 </app-main-nav>
 

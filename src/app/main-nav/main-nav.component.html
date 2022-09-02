@@ -1,3 +1,4 @@
+
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer position="end" class="sidenav" 
       [ngClass]="{hidden: (isHandset$ | async) === false}"
@@ -21,8 +22,8 @@
     </mat-nav-list>
   </mat-sidenav>
   
-  <mat-sidenav-content class="container">
-    <mat-toolbar class="header">
+  <mat-sidenav-content>
+    <mat-toolbar class="header container">
         <span class="logo me-auto">
           <a href="index.html" class="company-logo">
             <img src="assets/images/logo.png" alt style="height:40px;" >
@@ -32,19 +33,17 @@
           <span [ngClass]="{hidden: (isHandset$ | async) === true}">
             <a class="navbar-element" href="#">home</a>
             
-            <a mat-list-item href="#" [matMenuTriggerFor]="menu" #menuTrigger="matMenuTrigger" (mouseenter)="menuTrigger.openMenu()" class="hidden-menu-item">about
-              <mat-icon aria-label="expand more" style="vertical-align: center;">expand_more</mat-icon>
-            </a>
-            <mat-menu #menu="matMenu" hasbackDrop="false" overlapTrigger="false" hasBackdrop="false">
-              <span (mouseleave)="menuTrigger.closeMenu()">
-                <button mat-menu-item class="hidden-menu-item">about us</button>
-                <button mat-menu-item class="hidden-menu-item">team</button>
-              </span>
-            </mat-menu>
+            <div ngbDropdown #drop="ngbDropdown" class="d-inline-block">
+              <a class="navbar-element" href="#" id="about-us-dropdown" (mouseenter)="drop.open()" ngbDropdownToggle>about</a>
+              <div ngbDropdownMenu aria-labelledby="about-us-dropdown" (mouseleave)="$event.stopPropagation(); drop.close();">
+                <a class="hidden-menu-item" href="#" ngbDropdownItem>about us</a>
+                <a class="hidden-menu-item" href="#" ngbDropdownItem>team</a>
+              </div>
+            </div>
             
-            <a class="navbar-element" href="#">our services</a>
-            <a class="navbar-element" href="#">tech stack</a>
-            <a class="navbar-element" href="#">contact</a>
+          <a class="navbar-element" href="#">our services</a>
+          <a class="navbar-element" href="#">tech stack</a>
+          <a class="navbar-element" href="#">contact</a>
           </span>
 
           <span style="margin: 0 0 0 30px;">

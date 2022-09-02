@@ -1,12 +1,11 @@
+#introduction{
+    margin-top: 70px;
+    margin-bottom: -95px;
+}
 
-.navbar{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+#aboutus{
+    background-color: #444444;
+    margin-bottom: -35px;
 }
 
 .slogan {
@@ -16,6 +15,20 @@
     font-weight: 700;
     line-height: 56px;
     color: #364146;
+}
+
+.intro-text-block{
+    padding-top: 3rem !important;
+    order: 2 !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    display: flex !important;
+}
+
+.intro-image{
+    text-align: center;
+    order: 1;
+    padding-top: 3rem !important;
 }
 
 .text {
@@ -31,5 +44,9 @@
 .tile-image{
     width: 60%;
     height: 90%;
+}
 
+.mat-grid-tile{
+    justify-content: initial;
+    align-items: initial;
 }
