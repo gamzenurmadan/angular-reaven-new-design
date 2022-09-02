@@ -3,9 +3,11 @@
     margin-bottom: -95px;
 }
 
-#aboutus{
-    background-color: #444444;
+.aboutus{
+    background-color: #f7f8f9;
+    margin-top: 40px;
     margin-bottom: -35px;
+    padding: 0;
 }
 
 .slogan {
@@ -46,7 +48,24 @@
     height: 90%;
 }
 
-.mat-grid-tile{
-    justify-content: initial;
-    align-items: initial;
+.about{
+    font-weight: 400;
+    font-size: 32px;
+    color: #364146;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+}
+
+.about-text-block{
+    flex-direction: coloumn!important;
+    display: flex!important;
+    justify-content: center;
+}
+
+.about-text{
+    font-family: 'Raleway', sans-serif;
+    color: #364146;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
 }
