@@ -14,12 +14,12 @@
       </article>
 
       <article data-aos="fade-left" class="col-lg-6 order-lg-2 intro-image">
-        <img class="img-fluid" style="vertical-align: center; height: 450px; width: 1000px;" src="assets/images/hero-img.png">
+        <img class="img-fluid" style="vertical-align: center; height: 450px; width: 800px;" src="assets/images/hero-img.png">
       </article>
     </div>
   </div>
 
-  <div class="aboutus">
+  <div #aboutus class="aboutus">
     <div class="container" style="padding: 60px 50px;">
       <div class="row">
         <article data-aos="zoom-in" class="col-lg-6 " style="margin-top: 40px;">
@@ -37,6 +37,108 @@
             </p>
           </div>
         </article>
+      </div>
+    </div>
+  </div>
+
+  <div #features class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 order-lg-1 mg-tg-0 feature-text-block">
+          <ul ngbNav #nav="ngbNav" class="nav-tabs">
+            <li ngbNavItem>
+              <a ngbNavLink class="nav-link" (click)="featureCarousel.select('feature-1')">
+                <h2 class="feature-header">products&solutions</h2>
+                <p class="feature-paragh">
+                  reaven.tech provides agile productions and on time solutions for businesses that seek to achieve
+                  results by precision and improve their decision-making mechanisms through data analytics.
+                </p>
+              </a>
+              
+            </li>
+          </ul>
+          <ul ngbNav #nav="ngbNav" class="nav-tabs">
+            <li ngbNavItem>
+              <a ngbNavLink class="nav-link" (click)="featureCarousel.select('feature-2')">
+                <h2 class="feature-header">reaven as a fintech company</h2>
+                <p class="feature-paragh">
+                  as a fintech company, we help the financial institutions to adopt new data technologies of neo-banking 
+                  by architecting back-end operations of BaaSs
+                </p>
+              </a>
+              
+            </li>
+          </ul> 
+          <ul ngbNav #nav="ngbNav" class="nav-tabs">
+            <li ngbNavItem>
+              <a ngbNavLink class="nav-link" (click)="featureCarousel.select('feature-3')">
+                <h2 class="feature-header">big data management</h2>
+                <p class="feature-paragh">
+                  we architect wholistic systems for flow, manipulation and maintenance of data,
+                  and collaborate with partners to ensure that such systems are as much a state
+                  of art as they fit business data framework.
+                </p>
+              </a>
+              
+            </li>
+          </ul>
+          <ul ngbNav #nav="ngbNav" class="nav-tabs">
+            <li ngbNavItem>
+              <a ngbNavLink class="nav-link" (click)="featureCarousel.select('feature-4')">
+                <h2 class="feature-header">ETL and data warehouse</h2>
+                <p class="feature-paragh">
+                  in a tightly scheduled time, team reaven can build up and entire real-time ETL service
+                  and data warehouse or supply ad hoc technical infrastructure for the 
+                  management of any sort of data.
+                </p>
+              </a>
+                
+            </li>
+          </ul>
+          <ul ngbNav #nav="ngbNav" class="nav-tabs">
+            <li ngbNavItem>
+              <a ngbNavLink class="nav-link" (click)="featureCarousel.select('feature-5')">
+                <h2 class="feature-header">business intelligence</h2>
+                <p class="feature-paragh">
+                  we help our partners bring out their awaiting potential by provisioning on-premise
+                  BI systems with visual analytics and comprehensive reporting tools.
+                </p>
+              </a>
+                
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="col-lg-6 order-lg-2 feature-img">
+          <ngb-carousel  #featureCarousel="ngbCarousel" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+            <ng-template ngbSlide id="feature-1">
+              <div class="picsum-img-wrapper">
+                <img src="assets/images/features/features-1.png" class="img-fluid">
+              </div>
+            </ng-template>
+            <ng-template ngbSlide id="feature-2">
+              <div class="picsum-img-wrapper">
+                <img src="assets/images/features/features-2.png" class="img-fluid" alt="Random second slide">
+              </div>
+            </ng-template>
+            <ng-template ngbSlide id="feature-3">
+              <div class="picsum-img-wrapper">
+                <img src="assets/images/features/features-3.png" class="img-fluid" alt="Random third slide">
+              </div>
+            </ng-template>
+            <ng-template ngbSlide id="feature-4">
+              <div class="picsum-img-wrapper">
+                <img src="assets/images/features/features-4.png" class="img-fluid" alt="Random third slide">
+              </div>
+            </ng-template>
+            <ng-template ngbSlide id="feature-5">
+              <div class="picsum-img-wrapper">
+                <img src="assets/images/features/features-5.png" class="img-fluid" alt="Random third slide">
+              </div>
+            </ng-template>
+          </ngb-carousel>
+        </div>
       </div>
     </div>
   </div>
