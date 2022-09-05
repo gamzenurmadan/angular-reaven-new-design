@@ -47,9 +47,9 @@
         <div class="col-lg-6 order-lg-1 mg-tg-0 feature-text-block">
           <ul ngbNav #nav="ngbNav" class="nav-tabs">
             <li ngbNavItem>
-              <a ngbNavLink class="nav-link" (click)="featureCarousel.select('feature-1')">
+              <a ngbNavLink class="nav-link" data-bs-toggle="tab" (click)="featureCarousel.select('feature-1')">
                 <h2 class="feature-header">products&solutions</h2>
-                <p class="feature-paragh">
+                <p>
                   reaven.tech provides agile productions and on time solutions for businesses that seek to achieve
                   results by precision and improve their decision-making mechanisms through data analytics.
                 </p>
@@ -59,7 +59,7 @@
           </ul>
           <ul ngbNav #nav="ngbNav" class="nav-tabs">
             <li ngbNavItem>
-              <a ngbNavLink class="nav-link" (click)="featureCarousel.select('feature-2')">
+              <a ngbNavLink class="nav-link" data-aos-delay="800" (click)="featureCarousel.select('feature-2')">
                 <h2 class="feature-header">reaven as a fintech company</h2>
                 <p class="feature-paragh">
                   as a fintech company, we help the financial institutions to adopt new data technologies of neo-banking 
@@ -71,7 +71,7 @@
           </ul> 
           <ul ngbNav #nav="ngbNav" class="nav-tabs">
             <li ngbNavItem>
-              <a ngbNavLink class="nav-link" (click)="featureCarousel.select('feature-3')">
+              <a ngbNavLink class="nav-link" (click)="featureCarousel.select('feature-3')" >
                 <h2 class="feature-header">big data management</h2>
                 <p class="feature-paragh">
                   we architect wholistic systems for flow, manipulation and maintenance of data,
@@ -138,6 +138,70 @@
               </div>
             </ng-template>
           </ngb-carousel>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="services">
+    <div class="container">
+      <div class="services-title">
+        <h2>our services</h2>
+        <p>our goal is to make the financial services more transparent, efficient and cost-effective.</p>
+      </div>
+      <div class="row">
+
+        <div class="col-md-6 col-lg-3 mb-lg-0 services-box">
+          <mat-card class="first-card">
+            <mat-card-title>
+              <i class='bx bx-glasses'></i>
+            </mat-card-title>
+            <mat-card-subtitle>Transparency</mat-card-subtitle>     
+            <mat-card-content>
+              the financial service providers offer various service to their customers. 
+              However, there is no transparency between the customer and the service provider.
+              Reaven.tech helps companies in transparency by providing AISP (Account Information Service Provider).
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-lg-0 services-box">
+          <mat-card class="second-card">
+            <mat-card-title>
+              <i class="bx bxs-tachometer"></i>
+            </mat-card-title>
+            <mat-card-subtitle>Efficiency</mat-card-subtitle>     
+            <mat-card-content>
+              reaven.tech develops payment solutions like Online Payment Initiation Services Platform (PISP) 
+              that bring various financial source under one umbrella.
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-lg-0 services-box">
+          <mat-card class="third-card">
+            <mat-card-title>
+              <i class="bx bxs-dollar-circle"></i>
+            </mat-card-title>
+            <mat-card-subtitle>Cost-effective</mat-card-subtitle>     
+            <mat-card-content>
+              team reaven develops simple APIs for financial services that cut complex, 
+              time consuming and expensive the integration of different interfaces and financial sources.
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-lg-0 services-box">
+          <mat-card class="fourth-card">
+            <mat-card-title>
+              <i class='bx bx-bot'></i>
+            </mat-card-title>
+            <mat-card-subtitle>Transparency</mat-card-subtitle>     
+            <mat-card-content>
+              the financial service providers offer various service to their customers. 
+              However, there is no transparency between the customer and the service provider.
+              Reaven.tech helps companies in transparency by providing AISP (Account Information Service Provider).
+            </mat-card-content>
+          </mat-card>
         </div>
       </div>
     </div>

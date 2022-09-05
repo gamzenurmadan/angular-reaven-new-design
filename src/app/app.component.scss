@@ -92,13 +92,13 @@
     font-weight: 600;
     transition: 0.3s;
     color: #576971;
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-.feature-paragh{
+.nav-link p{
     font-size: 14px;
     margin-bottom: 0;
-    font-family:'Poppins' sans-serif!important;
+    font-family:'Poppins', sans-serif!important;
     font-weight: 400;
 }
 
@@ -119,5 +119,106 @@
 
 .nav-link:active h2, .nav-link:hover h2{
     color: #009cea;
-     
 }
+
+.services{
+    background-color: #f7f8f9;
+    padding: 60px 0;
+    overflow: hidden;
+    display: block;
+}
+
+.services-title h2{
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #627680;
+    text-align: center;
+}
+
+.services-title p{
+    margin-bottom: 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+.services-box{
+    display: flex!important;
+    align-items: stretch!important;
+    margin-bottom: 3rem!important;
+}
+
+.mat-card{
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgb(68 88 144 / 10%);
+    transition: all 0.3s ease-in-out;
+    border-radius: 4px;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+}
+
+.mat-card:hover{
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0,0,0,0.11),0 24px 46px var(--box-shadow-color);
+    
+}
+
+.first-card:hover{
+    border-bottom: 5px solid #d3f1f7;
+}
+
+.first-card i{
+    color: #d3f1f7;
+}
+
+.second-card:hover{
+    border-bottom: 5px solid #b42b21;
+}
+
+.second-card i{
+    color: #b42b21;
+}
+
+.third-card i{
+    color: #41cf2e;
+}
+
+.third-card:hover{
+    border-bottom: 5px solid #41cf2e;
+}
+
+.fourth-card i{
+    color: #2282ff;
+}
+
+.fourth-card:hover{
+    border-bottom: 5px solid #2282ff;
+}
+.mat-card-title i{
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+.mat-card-subtitle{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.mat-card-content{
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
