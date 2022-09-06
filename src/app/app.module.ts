@@ -20,6 +20,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +40,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatButtonModule,
     MatListModule,
     MatMenuModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
