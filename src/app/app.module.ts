@@ -17,6 +17,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {MatInputModule} from '@angular/material/input';
 
 
 
@@ -41,6 +42,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatListModule,
     MatMenuModule,
     NgbModule,
+    MatInputModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

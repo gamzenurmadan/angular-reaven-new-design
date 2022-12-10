@@ -1,13 +1,25 @@
 
+$main-dark: #244C66;
+$main-light: #e9f3f6;
+$highlight: #7DB290;
+$headerText: $main-dark;
+$headerBg: $main-light;
+
 .sidenav-container {
   height: 100%;
-  
+}
+
+.sidenav-container a:hover{
+  opacity: 1;
 }
 
 .sidenav {
   width: 200px;
-  
+  background-color: $main-light;
+}
 
+.mat-drawer-content{
+  background-color: $main-light;
 }
 
 .sidenav .mat-toolbar {
@@ -20,13 +32,11 @@
 }
 
 .mat-toolbar{
-  position: sticky;
-  top: 0;
-  z-index: 1;
+  background-color: transparent;
 }
 
 .mat-drawer-container{
-  background-color: white;
+  background-color: $main-light;
 }
 
 .mat-icon{
@@ -37,12 +47,19 @@
   transition: 0.5s;
 }
 
-
 .header{
   height: 72px;
   z-index: 997;
   transition: all 0.5s;
-  background: #fff;
+  background-color: $main-light; 
+  box-shadow: 0 3px 20px rgba(black, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  
+  &.active{
+    background-color: $main-dark; 
+  }
 }
 
 .hidden{
@@ -57,12 +74,13 @@
   display: inline-block;
   justify-content: space-between;
   padding-left: 10px;
-  font-family:'Poppins', sans-serif;
-  font-size: 15px;
-  color: #7b909a;
+  font-family:'Lato', sans-serif;
+  font-size: 16px;
   white-space: nowrap;
   transition: 0.3s;
   text-decoration: none;
+  color: black;
+  opacity: 0.5;
 }
 
 .navbar-element, .mat-list-item{
@@ -71,12 +89,13 @@
   padding: 10px 0 10px 30px;
   margin: 0 10px;
   margin-left: auto;
-  font-family:'Poppins', sans-serif;
+  font-family:'Lato', sans-serif;
   font-size: 15px;
-  color: #7b909a;
   white-space: nowrap;
   transition: 0.3s;
   text-decoration: none;
+  color: black;
+  opacity: 0.5;
 }
 
 .company-logo {
@@ -87,14 +106,12 @@
 
 
 .hidden-menu-item{
-  font-family:'Poppins', sans-serif;
+  font-family:'Lato', sans-serif;
   font-size: 15px;
-  color: #7b909a;
   text-decoration: none;
+  color: black;
 }
 
-.mat-toolbar a:hover, .mat-list-item:hover, .hidden-menu-item:hover{
-  color: #009cea;
-}
+
 
 

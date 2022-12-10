@@ -1,150 +1,155 @@
 <app-main-nav>
-  <div #introduction class="container">
-    <div class="row">
-      <article data-aos="fade-up" class="col-lg-6 order-lg-1 pt-lg-0 intro-text-block">
-        <h1 class="slogan">
-          FinTech, BigData, Business Intelligence
-        </h1>
-  
-        <p class="text">
-          Creating cutting-edge software for the delivery and use of financial services,
-          we build up the enterprise's infrastructure for Big Data Management and Business Intelligence.
-          Our software-as-a-services provide companies what is needed for their banking and payment service products.
-        </p>
-      </article>
-
-      <article data-aos="fade-left" class="col-lg-6 order-lg-2 intro-image">
-        <img class="img-fluid" style="vertical-align: center; height: 450px; width: 800px;" src="assets/images/hero-img.png">
-      </article>
+  <section id="introduction" class="introduction" data-section>
+    <div data-aos="zoom-in" class="bg-image">
+      <div class="container">
+        <div class="row">
+          
+          <article class="col-lg-6 order-lg-1 order-1 pt-lg-0 intro-text-block">
+            <h1 data-aos="fade-up-right" class="slogan">
+              FinTech,
+            </h1>
+            <h1 data-aos="fade-up-right" data-aos-delay="100" class="slogan">
+              BigData,
+            </h1> 
+            <h1 data-aos="fade-up-right" data-aos-delay="200" class="slogan">
+              Business Intelligence
+            </h1>    
+          </article>
+    
+          <article data-aos="fade-left" data-aos-delay="300" class=" order-lg-2 order-2 intro-content">
+            <p class="text p-large">
+              Creating cutting-edge software for the delivery and use of financial services,
+              we build up the enterprise's infrastructure for Big Data Management and Business Intelligence.
+              Our software-as-a-services provide companies what is needed for their banking and payment service products.
+            </p>
+          </article>
+        </div>
+      </div>   
     </div>
-  </div>
+  </section>
+  
 
-  <div #aboutus class="aboutus">
+  <section id="aboutus" class="aboutus" data-section>
     <div class="container" style="padding: 60px 50px;">
       <div class="row">
-        <article data-aos="zoom-in" class="col-lg-6 " style="margin-top: 40px;">
-          <img class="img-fluid" src="assets/images/logo.png">
-        </article>
-  
-        <article data-aos="fade-left" class="col-lg-6 about-text-block">
-          <div class="content pt-4 pt-lg-0">
-            <h1 class="about">about us</h1>
-  
-            <p class="about-text">
-              We are a part of REA Ventures, an investment company with teams in Hamburg, Izmir and Gibraltar. 
-              Reaven Tech has formed up financial technologies in mind, and accordingly tailored the capabilities
-              of computer sciences into big data management and back-end operations of finance, banking services and trade platforms.
-            </p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
+        <div class="col-12 col-lg-6 mb-4 mb-lg-0 mg-tg-0 feature-text-block">
+          <div class="scrollspy-navigation mb-0 mb-lg-6">
+            <div class="mb-0 mb-lg-5">
+              <h2 class="about">about us</h2>
+              <p class="about-text">We are a part of REA Ventures, an investment company with teams in Hamburg, Izmir and Gibraltar. 
+                Reaven Tech has formed up financial technologies in mind, and accordingly tailored the capabilities
+                of computer sciences into big data management and back-end operations of finance, banking services and trade platforms.
+              </p>
+            </div>
+            <div class="feature-group-item">
+              <a class="feature-1 d-none d-lg-block" data-target="#feature-1" href="#feature-1">
+                <h3>products&solutions</h3>
+              </a>
+            
+            
+              <a class="feature-2 d-none d-lg-block" data-target="#feature-2" href="#feature-2">
+                <h3>reaven as a fintech company</h3>
+              </a>
+            
+            
+              <a class="feature-3 d-none d-lg-block" data-target="#feature-3" href="#feature-3">
+                <h3>big data management</h3>
+              </a>
+            
+            
+              <a class="feature-4 d-none d-lg-block" data-target="#feature-4" href="#feature-4">
+                <h3>ETL and datawarehouse</h3>
+              </a>
+            
+            
+              <a class="feature-5 d-none d-lg-block" data-target="#feature-5" href="#feature-5">
+                <h3>business intelligence</h3>
+              </a>
 
-  <div #features class="features">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 order-lg-1 mg-tg-0 feature-text-block">
-          <ul ngbNav #nav="ngbNav" class="nav-tabs">
-            <li ngbNavItem>
-              <a ngbNavLink class="nav-link" data-bs-toggle="tab" (click)="featureCarousel.select('feature-1')">
-                <h2 class="feature-header">products&solutions</h2>
-                <p>
+            </div>
+          </div>
+        </div>
+
+        <div  class="col-12 col-lg-6">
+          <div class="scrollspy-content">
+            <div id="feature-1" class="feature-cards">
+              <mat-card  class="feature-card">
+                <mat-card-title-group>
+                  <mat-card-title class="feature-card-title">Products&Solutions</mat-card-title>
+                  
+                </mat-card-title-group>
+                <mat-card-content class="feature-card-content">
                   reaven.tech provides agile productions and on time solutions for businesses that seek to achieve
                   results by precision and improve their decision-making mechanisms through data analytics.
-                </p>
-              </a>
-              
-            </li>
-          </ul>
-          <ul ngbNav #nav="ngbNav" class="nav-tabs">
-            <li ngbNavItem>
-              <a ngbNavLink class="nav-link" data-aos-delay="800" (click)="featureCarousel.select('feature-2')">
-                <h2 class="feature-header">reaven as a fintech company</h2>
-                <p class="feature-paragh">
+                  <img class="img-fluid" src="assets/images/features/features-1.png">
+                </mat-card-content>
+              </mat-card>
+            </div>
+
+            <div id="feature-2" class="feature-cards">
+              <mat-card  class=" feature-card">
+                <mat-card-title-group>
+                  <mat-card-title class="feature-card-title">Reaven as a Fintech Company</mat-card-title>
+                  
+                </mat-card-title-group>
+                <mat-card-content class="feature-card-content">
                   as a fintech company, we help the financial institutions to adopt new data technologies of neo-banking 
                   by architecting back-end operations of BaaSs
-                </p>
-              </a>
-              
-            </li>
-          </ul> 
-          <ul ngbNav #nav="ngbNav" class="nav-tabs">
-            <li ngbNavItem>
-              <a ngbNavLink class="nav-link" (click)="featureCarousel.select('feature-3')" >
-                <h2 class="feature-header">big data management</h2>
-                <p class="feature-paragh">
+                  <img class="img-fluid" src="assets/images/features/features-2.png">
+                </mat-card-content>
+              </mat-card>
+            </div>
+
+            <div id="feature-3" class="feature-cards">
+              <mat-card class="feature-card">
+                <mat-card-title-group>
+                  <mat-card-title class="feature-card-title">Big Data Management</mat-card-title>
+                  
+                </mat-card-title-group>
+                <mat-card-content class="feature-card-content">
                   we architect wholistic systems for flow, manipulation and maintenance of data,
                   and collaborate with partners to ensure that such systems are as much a state
                   of art as they fit business data framework.
-                </p>
-              </a>
-              
-            </li>
-          </ul>
-          <ul ngbNav #nav="ngbNav" class="nav-tabs">
-            <li ngbNavItem>
-              <a ngbNavLink class="nav-link" (click)="featureCarousel.select('feature-4')">
-                <h2 class="feature-header">ETL and data warehouse</h2>
-                <p class="feature-paragh">
+                  <img class="img-fluid" src="assets/images/features/features-3.png">
+                </mat-card-content>
+              </mat-card>
+            </div>
+
+            <div id="feature-4" class="feature-cards">
+              <mat-card class=" feature-card">
+                <mat-card-title-group>
+                  <mat-card-title class="feature-card-title">ETL and Data Warehouse</mat-card-title>
+                  
+                </mat-card-title-group>
+                <mat-card-content class="feature-card-content">
                   in a tightly scheduled time, team reaven can build up and entire real-time ETL service
                   and data warehouse or supply ad hoc technical infrastructure for the 
                   management of any sort of data.
-                </p>
-              </a>
-                
-            </li>
-          </ul>
-          <ul ngbNav #nav="ngbNav" class="nav-tabs">
-            <li ngbNavItem>
-              <a ngbNavLink class="nav-link" (click)="featureCarousel.select('feature-5')">
-                <h2 class="feature-header">business intelligence</h2>
-                <p class="feature-paragh">
+                  <img class="img-fluid" src="assets/images/features/features-4.png">
+                </mat-card-content>
+              </mat-card>
+            </div>
+            <div id="feature-5" class="feature-cards">
+              <mat-card class="feature-card">
+                <mat-card-title-group>
+                  <mat-card-title class="feature-card-title">Business Intelligence</mat-card-title>
+                  
+                </mat-card-title-group>
+                <mat-card-content class="feature-card-content">
                   we help our partners bring out their awaiting potential by provisioning on-premise
                   BI systems with visual analytics and comprehensive reporting tools.
-                </p>
-              </a>
-                
-            </li>
-          </ul>
-        </div>
-
-
-        <div class="col-lg-6 order-lg-2 feature-img">
-          <ngb-carousel  #featureCarousel="ngbCarousel" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
-            <ng-template ngbSlide id="feature-1">
-              <div class="picsum-img-wrapper">
-                <img src="assets/images/features/features-1.png" class="img-fluid">
-              </div>
-            </ng-template>
-            <ng-template ngbSlide id="feature-2">
-              <div class="picsum-img-wrapper">
-                <img src="assets/images/features/features-2.png" class="img-fluid" alt="Random second slide">
-              </div>
-            </ng-template>
-            <ng-template ngbSlide id="feature-3">
-              <div class="picsum-img-wrapper">
-                <img src="assets/images/features/features-3.png" class="img-fluid" alt="Random third slide">
-              </div>
-            </ng-template>
-            <ng-template ngbSlide id="feature-4">
-              <div class="picsum-img-wrapper">
-                <img src="assets/images/features/features-4.png" class="img-fluid" alt="Random third slide">
-              </div>
-            </ng-template>
-            <ng-template ngbSlide id="feature-5">
-              <div class="picsum-img-wrapper">
-                <img src="assets/images/features/features-5.png" class="img-fluid" alt="Random third slide">
-              </div>
-            </ng-template>
-          </ngb-carousel>
+                  <img class="img-fluid" src="assets/images/features/features-5.png">
+                </mat-card-content>
+              </mat-card>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>             
 
 
-  <div class="services">
+  <section id="services" class="services" data-section>
     <div class="container">
       <div class="services-title">
         <h2>our services</h2>
@@ -153,12 +158,12 @@
       <div class="row">
 
         <div class="col-md-6 col-lg-3 mb-lg-0 services-box">
-          <mat-card class="first-card">
+          <mat-card class="services-card first-card">
             <mat-card-title>
               <i class='bx bx-glasses'></i>
             </mat-card-title>
-            <mat-card-subtitle>Transparency</mat-card-subtitle>     
-            <mat-card-content>
+            <mat-card-subtitle class="services-card-subtitle">Transparency</mat-card-subtitle>     
+            <mat-card-content class="services-card-content">
               the financial service providers offer various service to their customers. 
               However, there is no transparency between the customer and the service provider.
               Reaven.tech helps companies in transparency by providing AISP (Account Information Service Provider).
@@ -167,36 +172,36 @@
         </div>
 
         <div class="col-md-6 col-lg-3 mb-lg-0 services-box">
-          <mat-card class="second-card">
+          <mat-card class="services-card second-card">
             <mat-card-title>
               <i class="bx bxs-tachometer"></i>
             </mat-card-title>
-            <mat-card-subtitle>Efficiency</mat-card-subtitle>     
-            <mat-card-content>
+            <mat-card-subtitle class="services-card-subtitle">Efficiency</mat-card-subtitle>     
+            <mat-card-content class="services-card-content">
               reaven.tech develops payment solutions like Online Payment Initiation Services Platform (PISP) 
               that bring various financial source under one umbrella.
             </mat-card-content>
           </mat-card>
         </div>
         <div class="col-md-6 col-lg-3 mb-lg-0 services-box">
-          <mat-card class="third-card">
+          <mat-card class="services-card third-card">
             <mat-card-title>
               <i class="bx bxs-dollar-circle"></i>
             </mat-card-title>
-            <mat-card-subtitle>Cost-effective</mat-card-subtitle>     
-            <mat-card-content>
+            <mat-card-subtitle class="services-card-subtitle">Cost-effective</mat-card-subtitle>     
+            <mat-card-content class="services-card-content">
               team reaven develops simple APIs for financial services that cut complex, 
               time consuming and expensive the integration of different interfaces and financial sources.
             </mat-card-content>
           </mat-card>
         </div>
         <div class="col-md-6 col-lg-3 mb-lg-0 services-box">
-          <mat-card class="fourth-card">
+          <mat-card class="services-card fourth-card">
             <mat-card-title>
               <i class='bx bx-bot'></i>
             </mat-card-title>
-            <mat-card-subtitle>Neo-Banking</mat-card-subtitle>     
-            <mat-card-content>
+            <mat-card-subtitle class="services-card-subtitle">Neo-Banking</mat-card-subtitle>     
+            <mat-card-content class="services-card-content">
               we build up cloud platforms of neo-banking that automate accounting, 
               payment and transfer processes so that people can concentrate on their true business rather than 
               getting lost in the pillars of traditional banking.
@@ -205,9 +210,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="team">
+  <section id="team" class="team" data-section>
     <div class="container">
       <div class="team-title">
         <h2>
@@ -225,12 +230,14 @@
             <div class="member-pic">
               <img class="img-fluid" src="assets/images/team/TeyhanAktan.jpg">
               <div class="member-info">
-                <h4>Teyhan Aktan</h4>
-                <span>CEO</span>
-                <div class="member-link">
-                  <a href="https://de.linkedin.com/in/teyhan">
-                    <i class='bx bxl-linkedin-square'></i>
-                  </a>
+                <div class="member-info-center">
+                  <h4>Teyhan Aktan</h4>
+                  <span>CEO</span>
+                  <div class="member-link">
+                    <a href="https://de.linkedin.com/in/teyhan">
+                      <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -241,12 +248,14 @@
             <div class="member-pic">
               <img class="img-fluid" src="assets/images/team/AliUygarKucukemre.jpg">
               <div class="member-info">
-                <h4>Ali Uygar Küçükemre</h4>
-                <span>CTO</span>
-                <div class="member-link">
-                  <a href="https://tr.linkedin.com/in/aliuygarkucukemre">
-                    <i class='bx bxl-linkedin-square'></i>
-                  </a>
+                <div class="member-info-center">
+                  <h4>Ali Uygar Küçükemre</h4>
+                  <span>CTO</span>
+                  <div class="member-link">
+                    <a href="https://tr.linkedin.com/in/aliuygarkucukemre">
+                      <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -257,12 +266,14 @@
             <div class="member-pic">
               <img class="img-fluid" src="assets/images/team/OsmanOzgur.jpg">
               <div class="member-info">
-                <h4>Osman Özgür</h4>
-                <span>Software Architect</span>
-                <div class="member-link">
-                  <a href="https://www.linkedin.com/in/osman-ozgur-5182675">
-                    <i class='bx bxl-linkedin-square'></i>
-                  </a>
+                <div class="member-info-center">
+                  <h4>Osman Özgür</h4>
+                  <span>Software Architect</span>
+                  <div class="member-link">
+                    <a href="https://www.linkedin.com/in/osman-ozgur-5182675">
+                      <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -273,12 +284,14 @@
             <div class="member-pic">
               <img class="img-fluid" src="assets/images/team/EmrahCaliskan.jpg">
               <div class="member-info">
-                <h4>Emrah Çalışkan</h4>
-                <span>Software Architect</span>
-                <div class="member-link">
-                  <a href="https://www.linkedin.com/in/emrah-%C3%A7ali%C5%9Fkan-78518b54/">
-                    <i class='bx bxl-linkedin-square'></i>
-                  </a>
+                <div class="member-info-center">
+                  <h4>Emrah Çalışkan</h4>
+                  <span>Software Architect</span>
+                  <div class="member-link">
+                    <a href="https://www.linkedin.com/in/emrah-%C3%A7ali%C5%9Fkan-78518b54/">
+                      <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -291,13 +304,15 @@
             <div class="member-pic">
               <img class="img-fluid" src="assets/images/team/BarisUzun.jpg">
               <div class="member-info">
-                <h4>Barış Uzunhan</h4>
-                <span>Head of Projects and Product</span>
-                <div class="member-link">
-                  <a href="https://www.linkedin.com/in/baris-uzunhan/">
-                    <i class='bx bxl-linkedin-square'></i>
-                  </a>
-                </div>
+                <div class="member-info-center">
+                  <h4>Barış Uzunhan</h4>
+                  <span>Head of Projects and Product</span>
+                  <div class="member-link">
+                    <a href="https://www.linkedin.com/in/baris-uzunhan/">
+                      <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                  </div>
+                </div>    
               </div>
             </div>
           </div>
@@ -307,12 +322,14 @@
             <div class="member-pic">
               <img class="img-fluid" src="assets/images/team/SerhatAkbak.jpg">
               <div class="member-info">
-                <h4>Serhat Akbak</h4>
-                <span>Project Manager, Analyst</span>
-                <div class="member-link">
-                  <a href="https://tr.linkedin.com/in/serhat-akbak-9a7524104">
-                    <i class='bx bxl-linkedin-square'></i>
-                  </a>
+                <div class="member-info-center">
+                  <h4>Serhat Akbak</h4>
+                  <span>Project Manager, Analyst</span>
+                  <div class="member-link">
+                    <a href="https://tr.linkedin.com/in/serhat-akbak-9a7524104">
+                      <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -323,13 +340,15 @@
             <div class="member-pic">
               <img class="img-fluid" src="assets/images/team/SalimCanYildiz.jpg">
               <div class="member-info">
-                <h4>Salim Can Yıldız</h4>
-                <span>Software Developer</span>
-                <div class="member-link">
-                  <a href="https://www.linkedin.com/in/salim-can-yildiz/">
-                    <i class='bx bxl-linkedin-square'></i>
-                  </a>
-                </div>
+                <div class="member-info-center">
+                  <h4>Salim Can Yıldız</h4>
+                  <span>Software Developer</span>
+                  <div class="member-link">
+                    <a href="https://www.linkedin.com/in/salim-can-yildiz/">
+                      <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                  </div>
+                </div> 
               </div>
             </div>
           </div>
@@ -339,12 +358,14 @@
             <div class="member-pic">
               <img class="img-fluid" src="assets/images/team/OzhanYildirim.jpg">
               <div class="member-info">
-                <h4>Özhan Nuri Yıldırım</h4>
-                <span>Software Developer</span>
-                <div class="member-link">
-                  <a href="https://www.linkedin.com/in/yildirimozhan/">
-                    <i class='bx bxl-linkedin-square'></i>
-                  </a>
+                <div class="member-info-center">
+                  <h4>Özhan Nuri Yıldırım</h4>
+                  <span>Software Developer</span>
+                  <div class="member-link">
+                    <a href="https://www.linkedin.com/in/yildirimozhan/">
+                      <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -358,13 +379,15 @@
             <div class="member-pic">
               <img class="img-fluid" src="assets/images/team/EkinTepebas.jpg">
               <div class="member-info">
-                <h4>Ekin Tepebaş</h4>
-                <span>Software Developer</span>
-                <div class="member-link">
-                  <a href="https://www.linkedin.com/in/ekin-tepebas/">
-                    <i class='bx bxl-linkedin-square'></i>
-                  </a>
-                </div>
+                <div class="member-info-center">
+                  <h4>Ekin Tepebaş</h4>
+                  <span>Software Developer</span>
+                  <div class="member-link">
+                    <a href="https://www.linkedin.com/in/ekin-tepebas/">
+                      <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                  </div>
+                </div> 
               </div>
             </div>
           </div>
@@ -374,28 +397,30 @@
             <div class="member-pic">
               <img class="img-fluid" src="assets/images/team/OsmanAnilHicyilmaz.jpg">
               <div class="member-info">
-                <h4>Osman Anıl Hiçyılmaz</h4>
-                <span>Software Developer</span>
-                <div class="member-link">
-                  <a href="https://www.linkedin.com/in/osman-anil-hicyilmaz/">
-                    <i class='bx bxl-linkedin-square'></i>
-                  </a>
-                </div>
+                <div class="member-info-center">
+                  <h4>Osman Anıl Hiçyılmaz</h4>
+                  <span>Software Developer</span>
+                  <div class="member-link">
+                    <a href="https://www.linkedin.com/in/osman-anil-hicyilmaz/">
+                      <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                  </div>
+                </div>  
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="contact">
+  <section id="contact" class="contact" data-section>
     <div class="container">
       <div class="contact-title">
         <h2>contact us</h2>
       </div>
       <div class="row justify-content-center">
-        <div class="col-lg-5 d-flex align-items-stretch ">
+        <div class="col-lg-6 order-1 d-flex">
           <div class="info">
             <div class="address">
               <i class='bx bx-map'></i>
@@ -412,88 +437,80 @@
               <h3>Call:</h3>
               <p>+90 555 3072902</p>
             </div>
-            <div class="container justify-content-center">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1269.5350829983265!2d26.634550544178975!3d38.314730963823855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bb905dcd88e679%3A0x325bc54080b37c33!2sTechnopark%20IZMIR!5e0!3m2!1sen!2str!4v1662459390671!5m2!1sen!2str"
-               width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 col-md-3 footer-links">
-            <h4>quick links</h4>
-            <ul>
-              <li>
-                <i class='bx bx-chevron-right'></i>
-                <a href="index.html">home</a>
-              </li>
-              <li>
-                <i class='bx bx-chevron-right'></i>
-                <a href="index.html">about us</a>
-              </li>
-              <li>
-                <i class='bx bx-chevron-right'></i>
-                <a href="index.html">services</a>
-              </li>
-              <li>
-                <i class='bx bx-chevron-right'></i>
-                <a href="https://reaven.tech/terms-and-conditions.html">terms and conditions</a>
-              </li>
-              <li>
-                <i class='bx bx-chevron-right'></i>
-                <a href="https://reaven.tech/privacy-policy.html">privacy conditions</a>
-              </li>
-            </ul>
+        <div class="col-lg-6 order-2 d-flex">
+          <div class="contact">
+            <form class="example-form">          
+              <table class="example-full-width" cellspacing="2"><tr>
+                <td><mat-form-field class="example-full-width">
+                  <mat-label>First name</mat-label>
+                  <input matInput required>
+                </mat-form-field></td>
+                <td><mat-form-field class="example-full-width">
+                  <mat-label>Last Name</mat-label>
+                  <input matInput required>
+                </mat-form-field></td>
+              </tr></table>
+              
+              <p>
+                <mat-form-field style="width: 100%;">
+                  <mat-label>E-mail Address</mat-label>
+                  <input matInput required placeholder="Ex. hello@example.com">
+                </mat-form-field>
+              </p>
+  
+              <p>
+                <mat-form-field style="width: 100%;">
+                  <mat-label>Subject</mat-label>
+                  <input matInput required placeholder="Ex. General Enquiry">
+                </mat-form-field>
+              </p>
+  
+              <p>
+                <mat-form-field style="width: 100%;">
+                  <mat-label>Leave Your Message Here</mat-label>
+                  <textarea matInput required #message maxlength="256" placeholder="..."></textarea>
+                  <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+                </mat-form-field>
+              </p>
+  
+              <p style="text-align: end;"><button mat-raised-button>Submit</button></p>
+              
+            </form>
           </div>
           
-          <div class="col-lg-6 col-md-3 footer-links">
-            <h4>our services</h4>
-            <ul>
-              <li>
-                <i class='bx bx-chevron-right'></i>
-                <a href="https://reaven.tech/techStack.html">back-end solutions</a>
-              </li>
-              <li>
-                <i class='bx bx-chevron-right'></i>
-                <a href="https://reaven.tech/techStack.html">ETL</a>
-              </li>
-              <li>
-                <i class='bx bx-chevron-right'></i>
-                <a href="https://reaven.tech/techStack.html">data warehousing</a>
-              </li>
-              <li>
-                <i class='bx bx-chevron-right'></i>
-                <a href="https://reaven.tech/techStack.html">business intelligence</a>
-              </li>
-              <li>
-                <i class='bx bx-chevron-right'></i>
-                <a href="https://reaven.tech/techStack.html">mobile app development</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        </div> 
       </div>
-    </div>
 
-    <div class="container">
-      <div class="copyright">
-        © Copyright
-        <strong><span>Reaven Tech</span></strong>
-        All Rights Reserved
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="footer-large">
+      <div class="container">
+        <span><a href="https://reaven.tech/terms-and-conditions.html">Terms and Conditions</a></span>
+        <span><a href="https://reaven.tech/privacy-policy.html">Privacy Policy</a></span>
+        <span>&copy;  Copyright <strong>Reaven Tech.</strong> All Rights Reserved</span>
       </div>
       <img class="footer-icon" src="assets/images/revicon.png">
     </div>
-  </footer>
 
-  <a href="#" class="back-to-top">
-    <i class='bx bxs-up-arrow-square back-to-top-button'></i>
-  </a>
+    <div class="footer-ms">
+      <div class="container">
+        <img class="footer-icon" src="assets/images/revicon.png">
+        <div class="legal-links">
+          <p><a href="https://reaven.tech/terms-and-conditions.html">Terms and Conditions</a><i class='bx bx-chevron-right'></i></p>
+          <p><a href="https://reaven.tech/privacy-policy.html">Privacy Policy</a><i class='bx bx-chevron-right'></i></p>
+        </div>
+        <p>&copy;  Copyright <strong>Reaven Tech.</strong> All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="back-to-top">
+    <a href="#introduction"><i class='bx bxs-chevron-up-square'></i></a>
+  </div>
 </app-main-nav>
 
 

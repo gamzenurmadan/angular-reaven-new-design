@@ -1,5 +1,5 @@
 
-<mat-sidenav-container class="sidenav-container">
+<mat-sidenav-container class="sidenav-container" >
   <mat-sidenav #drawer position="end" class="sidenav" 
       [ngClass]="{hidden: (isHandset$ | async) === false}"
       fixedInViewport="false"
@@ -8,22 +8,21 @@
       [opened]="(isHandset$ | async) === false">
     
     <mat-nav-list>
-      <a mat-list-item href="#">home</a>
-      <a mat-list-item href="#">
-        <button mat-button [matMenuTriggerFor]="menu" class="hidden-menu-item">about</button>
-        <mat-menu #menu="matMenu">
-          <button mat-menu-item class="hidden-menu-item">about us</button>
-          <button mat-menu-item class="hidden-menu-item">team</button>
-        </mat-menu>
-      </a>
-      <a mat-list-item href="#">our services</a>
-      <a mat-list-item href="#">tech stack</a>
-      <a mat-list-item href="#">contact</a>
+      <a mat-list-item  href="#">home</a>
+      <a mat-list-item [matMenuTriggerFor]="menu">about</a>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item class="hidden-menu-item">about us</button>
+        <button mat-menu-item class="hidden-menu-item">team</button>
+      </mat-menu>
+      <a mat-list-item  href="#services">our services</a>
+      <a mat-list-item  href="#">tech stack</a>
+      <a mat-list-item  href="#contact">contact</a>
     </mat-nav-list>
   </mat-sidenav>
   
   <mat-sidenav-content>
-    <mat-toolbar class="header container">
+    <header class="header">
+      <mat-toolbar class="container" data-header>
         <span class="logo me-auto">
           <a href="index.html" class="company-logo">
             <img src="assets/images/logo.png" alt style="height:40px;" >
@@ -31,19 +30,19 @@
         </span>
         <span class="rightbuttons" >
           <span [ngClass]="{hidden: (isHandset$ | async) === true}">
-            <a class="navbar-element" href="#">home</a>
+            <a class="navbar-element " href="#introduction">home</a>
             
             <div ngbDropdown #drop="ngbDropdown" class="d-inline-block">
-              <a class="navbar-element" href="#" id="about-us-dropdown" (mouseenter)="drop.open()" ngbDropdownToggle>about</a>
+              <a class="navbar-element " href="#" id="about-us-dropdown" (mouseenter)="drop.open()" ngbDropdownToggle>about</a>
               <div ngbDropdownMenu aria-labelledby="about-us-dropdown" (mouseleave)="$event.stopPropagation(); drop.close();">
-                <a class="hidden-menu-item" href="#" ngbDropdownItem>about us</a>
-                <a class="hidden-menu-item" href="#" ngbDropdownItem>team</a>
+                <a class="hidden-menu-item " href="#aboutus" ngbDropdownItem>about us</a>
+                <a class="hidden-menu-item " href="#team" ngbDropdownItem>team</a>
               </div>
             </div>
             
-          <a class="navbar-element" href="#">our services</a>
-          <a class="navbar-element" href="#">tech stack</a>
-          <a class="navbar-element" href="#">contact</a>
+          <a class="navbar-element " href="#services" data-link>our services</a>
+          <a class="navbar-element " href="#" data-link>tech stack</a>
+          <a class="navbar-element " href="#contact" data-link>contact</a>
           </span>
 
           <span style="margin: 0 0 0 30px;">
@@ -61,10 +60,12 @@
             mat-icon-button
             (click)="drawer.toggle()"
             *ngIf="isHandset$ | async">
-            <mat-icon style="font-size: 28px; vertical-align: center;" aria-label="Side nav toggle icon">menu</mat-icon>
+            <mat-icon style="font-size: 20px; vertical-align: middle;" aria-label="Side nav toggle icon">menu</mat-icon>
           </button> 
         </span>  
     </mat-toolbar>
+    </header>
+
     <ng-content></ng-content>
   </mat-sidenav-content>
 </mat-sidenav-container>

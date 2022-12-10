@@ -34,9 +34,13 @@ $reaven-web-theme: mat.define-light-theme((
 @include mat.all-component-themes($reaven-web-theme);
 
 /* You can add global styles to this file, and also import other style files */
+html,body { height: 100%; position: relative;}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+*{
+  scroll-behavior: smooth;
+}
+
+body { margin: 0;}
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
